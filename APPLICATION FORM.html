@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+<style>
+    
+    table{
+        border-collapse:collapse;
+    }
+    td{border:2px solid rgb(5, 135, 211);
+        border-spacing:0mm;
+    }
+    h4{
+        text-align:center;
+    }
+    h2{
+        text-align:center;
+        font-weight:bolder;
+        background-color: white;
+        font-size:80px;
+   }
+   .container{
+     margin-left:80px ;
+   }
+   
+   
+</style>
+
+</head>
+<body>
+    <div style="background-color:white ;">
+   <h2>Application Form</h2>
+   </div>
+   <div style="background-color:rgb(158, 181, 202) ;">
+   <p style = "color:white;background-color: rgb(57, 82, 121);">A.General Questions</p> 
+  <form action="backend.php">
+       Proposed Insecured's Name:<input type=" text"><br>
+        <p style = "font-size: x-small;line-height:0mm ;">(Please use capital letters)</p><br>
+        <label for="Birthdate">Birthdate:</label>
+        <input type="date" id="Birthdate" name="Birthdate">
+       <a>     Gender:</a>
+        <input type="radio" id="Male" name="Gender" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Gender" value="Female">
+        <label for="Female">Female</label> <br>
+<br>
+<a>Address</a>
+<textarea name="Address" style="width:600px;height:20px;border-top: 0cm;border-left:0cm;border-right:0cm;"></textarea><br>
+<br>
+    <lable for ="PNumber">Phone Number:</lable>
+    <input type="text" id="PNumber" name="PNumber" maxlength="11">
+    <label for ="email">Email Address</label>
+    <input type="email" id="email" name="email"><br>
+    <br>
+    ID Number:<input type=" text">
+    Social Security Number:<input type=" text"><br>
+    <br>
+    <a>Status:</a>
+        <input type="radio" id="Single" name="Status" value="Single">
+        <label for="single">Single</label>
+        <input type="radio" id="Married" name="Status" value="Married">
+        <label for="Married">Married</label>
+        <input type="radio" id="Divorced" name="Status" value="Divorced">
+        <label for="Divorced">Divorced</label>
+        <input type="radio" id="Others" name="Status" value="Others">
+        <label for="Others">Others</label> <br>
+<br>
+     Occupation:<input type=" text">
+     <a>Are you retired?</a>
+     <input type="radio" id="Yes" name="Are your retiree?" value="Yes">
+        <label for="Yes">Yes</label>
+        <input type="radio" id="No" name="Are you retiree?" value="No">
+        <label for="No">No</label> <br>
+<br>
+<p style = "color:white;background-color: rgb(57, 82, 121);">B.Type of Health Coverage</p>
+<div class="container"> 
+<table >
+ <tr >
+    <td >Employee:
+        <input type="radio" id="Yes" name="Employee" value="Yes">
+        <label for="Yes">Yes</label>
+        <input type="radio" id="No" name="Employee" value="No">
+        <label for="No">No</label><br>Plan Choice:
+    </td>
+    <td > Spouse:
+            <input type="radio" id="Yes" name="Spouse" value="Yes">
+            <label for="Yes">Yes</label>
+            <input type="radio" id="No" name="Spouse" value="No">
+            <label for="No">No</label> <br>Plan Choice:
+        </td>
+        <td> Children:
+            <input type="radio" id="Yes" name="Children" value="Yes">
+            <label for="Yes">Yes</label>
+            <input type="radio" id="No" name="Children" value="No">
+            <label for="No">No</label><br>Plan Choice:
+       </td>
+        </tr>
+  
+
+</table>
+<p>Complete If Spouse/Children are Proposed for Insurance: </p>
+  <table>
+    <tr>
+        <td>Name</td>
+        <td>SSN No.</td>
+        <td>Relationship to proposed insured</td>
+        <td>Birth Date</td>
+        <td>Age</td>
+        <td>Sex</td>
+    </tr>
+    <tr>
+        <td> &nbsp  </td>
+        <td> &nbsp  </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+         </tr>
+     <tr>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+    </tr>
+    <tr>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+    </tr>
+    <tr>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+        <td>&nbsp   </td>
+    </tr>
+   
+  </table>
+</div>
+  <p style = "color:white;background-color: rgb(57, 82, 121);">C.The Policy</p> 
+  Units:<input type=" text"> 
+  Annual Premium:<input type=" text"><br>
+  <a>Payment Mode:</a>
+  <input type="radio" id="Annual" name="Payment Mode" value="Annual">
+        <label for="Annual">Annual</label>
+        <input type="radio" id="Semi-Annual" name="Payment Mode" value="Semi-Annual">
+        <label for="Semi-Annual">Semi-Annual</label>
+        <input type="radio" id="MonthlyPAT" name="Payment Mode" value="Monthly PAT(complete PAT card)">
+        <label for="Monthly PAT">Monthly PAT(complete PAT card)</label><br>
+<br>
+  Cash with Application:$:<input type=" text"><br>
+  <br>
+  plan modal premium:$:<input type=" text"><br>
+  <br>
+  <a style="color:darkcyan;">Terms and Conditions</a><br>
+ <a style="color:darkcyan;">Improvement should be measured regularly and assessed in <br>order for you to know what's beneficial and what is not.This will<br>help you set new targets.</a>
+ <h4 style="margin-left:150px;">Signature:<br><input type="text"></h4>  
+<label for="Date" style="margin-left:870px;" >Date:</label>
+    <input type="text" id="Date" name="Date" >
+ </form>
+</div>
+</body>
+</html>
